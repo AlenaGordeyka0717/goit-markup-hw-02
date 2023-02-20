@@ -1,0 +1,209 @@
+/*СТИЛИ WebStudio-index.html */
+:root {
+    /* главный цвет текста */
+    --primery-text-color: #2E2F42;
+    /* цвет акцента */
+    --accent-color: #FFFFFF;
+    /* цвет кнопки */
+    --primery-bg-color: #4D5AE5;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--primery-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* сброс маркеров */
+.list {
+    list-style: none;
+}
+
+/* логотип header */
+
+.logo {
+    color: #4D5AE5;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+
+    text-decoration: none;
+
+}
+
+.logo-header span {
+    color: var(--primery-text-color);
+}
+
+/* навигация сайта */
+.site-nav .link {
+    color: var(--primery-text-color);
+
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #404BBF
+}
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+    color: #404BBF
+}
+
+.adress-list .link {
+    color: #434455;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+/* герой */
+.hero {
+    background: #2E2F42;
+}
+
+.hero-title {
+    color: var(--accent-color);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+/* скрытый заголовок */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* кнопка */
+.button {
+    color: var(--accent-color);
+    background-color: var(--primery-bg-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+}
+
+/* секции */
+.section-title {
+    color: var(--primery-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.feature-list .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.feature-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* сотрудники */
+.section .item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.section .text-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.team {
+    background: #F4F4FD
+}
+
+/* логотип footer */
+footer {
+    background: #2E2F42;
+}
+
+.logo-footer span {
+    color: #F4F4FD;
+}
+
+.logo-text {
+    color: #E7E9FC;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+/* СТИЛИ Portfolio portfolio.html */
+.site-nav .link.current {
+    color: var(--primery-bg-color);
+}
+
+/* кнопка Portfolio */
+.button-portfolio {
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: #FFFFFF;
+    background: #404BBF
+}
+
+.feature-list-portfolio .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.feature-list-portfolio .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
