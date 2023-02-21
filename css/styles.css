@@ -1,22 +1,25 @@
 /*СТИЛИ WebStudio-index.html */
 :root {
     /* главный цвет текста */
-    --primery-text-color: #2E2F42;
+    --primery-text-color: #434455;
     /* цвет акцента */
     --accent-color: #FFFFFF;
+    /* цвет логотипа footer */
+    --secondary-color: #E7E9FC;
     /* цвет кнопки */
-    --primery-bg-color: #4D5AE5;
+    --primery-bg-logo-color: #4D5AE5;
+    /* цвет bg Team */
+    --secondary-bg-color: #F4F4FD;
+    /* цвет кнопки hover focus */
+    --hov-foc-color: #404BBF
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: var(--accent-color);
     color: var(--primery-text-color);
-
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.02em;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+
 }
 
 /* сброс маркеров */
@@ -27,7 +30,7 @@ body {
 /* логотип header */
 
 .logo {
-    color: #4D5AE5;
+    color: var(--primery-bg-logo-color);
     font-family: Raleway, sans-serif;
     letter-spacing: 0.03em;
     font-weight: 800;
@@ -35,32 +38,35 @@ body {
     line-height: 1.33;
 
     text-decoration: none;
+    text-transform: uppercase;
 
 }
 
 .logo-header span {
     color: var(--primery-text-color);
+    text-transform: uppercase;
 }
 
 /* навигация сайта */
 .site-nav .link {
     color: var(--primery-text-color);
+    font-weight: 500;
 
     text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #404BBF
+    color: var(--hov-foc-color);
 }
 
 .adress-list .link:hover,
 .adress-list .link:focus {
-    color: #404BBF
+    color: var(--hov-foc-color);
 }
 
 .adress-list .link {
-    color: #434455;
+    color: var(--primery-text-color);
 
 
     font-style: normal;
@@ -72,14 +78,14 @@ body {
 
 /* герой */
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--primery-text-color);
 }
 
 .hero-title {
     color: var(--accent-color);
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -104,15 +110,16 @@ body {
 /* кнопка */
 .button {
     color: var(--accent-color);
-    background-color: var(--primery-bg-color);
+    background-color: var(--primery-bg-logo-color);
     font-size: 16px;
     line-height: 1.5;
+    font-family: inherit;
 }
 
 .button:hover,
 .button:focus {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--accent-color);
+    background-color: var(--hov-foc-color);
 }
 
 /* секции */
@@ -132,12 +139,6 @@ body {
     line-height: 1.2;
 }
 
-.feature-list .text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 /* сотрудники */
 .section .item {
     font-weight: 500;
@@ -152,21 +153,20 @@ body {
 }
 
 .team {
-    background-color;
-    : #F4F4FD
+    background-color: var(--secondary-bg-color);
 }
 
 /* логотип footer */
 footer {
-    background-color: #2E2F42;
+    background-color: var(--primery-text-color);
 }
 
 .logo-footer span {
-    color: #F4F4FD;
+    color: var(--secondary-bg-color);
 }
 
 .logo-text {
-    color: #E7E9FC;
+    color: var(--secondary-color);
 
     font-weight: 400;
     font-size: 16px;
@@ -178,13 +178,13 @@ footer {
 
 /* СТИЛИ Portfolio portfolio.html */
 .site-nav .link.current {
-    color: var(--primery-bg-color);
+    color: var(--primery-bg-logo-color);
 }
 
 /* кнопка Portfolio */
 .button-portfolio {
-    color: #4D5AE5;
-    background-color: #F4F4FD;
+    color: var(--primery-bg-logo-color);
+    background-color: var(--secondary-bg-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -193,8 +193,8 @@ footer {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--accent-color);
+    background-color: var(--primery-text-color);
 }
 
 .feature-list-portfolio .title {
